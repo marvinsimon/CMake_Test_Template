@@ -22,6 +22,5 @@ add_executable(UnitTests ${SOURCES})
 target_link_libraries(UnitTests PUBLIC fooLib GTest::gtest GTest::gtest_main)
 
 # Include GoogleTest for discovery purposes
-include(CTest)
 include(GoogleTest)
 gtest_discover_tests(UnitTests)

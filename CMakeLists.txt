@@ -21,5 +21,6 @@ option(TEST_ENABLE "Enable the testing of the Feature (default ON)" ON)
 
 # Only build it when it is enabled
 if (TEST_ENABLE)
+    include(CTest)
     add_subdirectory(test)
 endif ()
